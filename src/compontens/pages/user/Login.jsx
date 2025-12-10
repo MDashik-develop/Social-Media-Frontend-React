@@ -47,7 +47,7 @@ const Login = () => {
                         'Authorization': `Bearer ${TempToken}`
                      },
                   });
-                  http.post('/me').then((res) => {
+                  http.get('/me').then((res) => {
                      const TempData = {
                         id: res.data.id,
                         name: res.data.name,
